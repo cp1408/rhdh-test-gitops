@@ -1,0 +1,13 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+commonLabels:         
+  argocd/app-name: rhdh-test
+  janus-idp.io/tekton: rhdh-test
+  backstage.io/kubernetes-id: rhdh-test
+  backstage.io/kubernetes-namespace: rhdh-test 
+  app.kubernetes.io/part-of: rhdh-test
+resources:
+- initialize-namespace.yaml
+- deployment.yaml
+- route.yaml
+- service.yaml

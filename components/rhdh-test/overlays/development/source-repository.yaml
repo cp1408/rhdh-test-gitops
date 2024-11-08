@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: rhdh-test-repository
+spec:
+  url: https://github.com/cp1408/rhdh-test
